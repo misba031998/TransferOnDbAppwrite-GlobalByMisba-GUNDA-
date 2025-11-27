@@ -28,8 +28,8 @@ const getMSSQLConnectionPool = async (dbConfig) => {
       database: dbConfig.database,
 
       // ⭐ IMPORTANT FIX FOR LARGE INSERTS ⭐
-      requestTimeout: 120000,
-      connectionTimeout: 30000,
+      requestTimeout: 1200000,
+      connectionTimeout: 300000,
 
       options: {
         encrypt: true,
