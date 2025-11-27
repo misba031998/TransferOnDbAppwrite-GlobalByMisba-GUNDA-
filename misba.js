@@ -176,7 +176,7 @@ http.createServer(async (req, res) => {
     const token = authHeader && authHeader.split(' ')[1]; // Expect "Bearer <TOKEN>"
     if (token !== TOKEN) {
       res.writeHead(403, { 'Content-Type': 'application/json' });
-      res.end(JSON.stringify({ success: false, message: 'Forbidden: Invalid token' }));
+      res.end(JSON.stringify({ success: false, message: 'Forbidden: Invalid token daar nahi lagta' }));
       return;
     }
     // ✅ Token valid, start sync in background
