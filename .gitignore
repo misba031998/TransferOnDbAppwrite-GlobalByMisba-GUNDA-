@@ -1,3 +1,4 @@
 config.js
 serviceAccount.json
 /node_modules
+.env
